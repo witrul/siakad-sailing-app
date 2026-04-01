@@ -1,0 +1,55 @@
+# Analisis dan Uraian Jadwal
+
+Berdasarkan dua gambar jadwal yang diberikan, berikut adalah uraian detailnya:
+
+## 1. Jadwal Program Executive (Class Executive)
+Jadwal ini menggunakan pembagian kelompok **Class Executive**. Dalam gambar, hanya Class Executive yang terisi.
+
+| Hari | Waktu | Kelompok | Instruktur |
+| :--- | :--- | :--- | :--- |
+| **Senin** | 08:30 - 10:00 | Class Executive | Mr. Ega |
+| | 10:15 - 11:45 | Class Executive | Mr. Bayu |
+| | 12:15 - 13:45 | Class Executive | Ms. Helmi |
+| **Selasa** | 08:30 - 10:00 | Class Executive | Mr. Ega |
+| | 10:15 - 11:45 | Class Executive | Ms. Eka |
+| | 12:15 - 13:45 | Class Executive | Ms. Helmi |
+| **Rabu** | 08:30 - 10:00 | Class Executive | Mr. Ega |
+| | 10:15 - 11:45 | Class Executive | Ms. Eka |
+| | 12:15 - 13:45 | Class Executive | Ms. Helmi |
+| **Kamis** | 08:30 - 10:00 | Class Executive | Mr. Ega |
+| | 10:15 - 11:45 | Class Executive | Mr. Bayu |
+| | 12:15 - 13:45 | Class Executive | Ms. Helmi |
+| **Jumat** | 08:00 - 09:30 | Class Executive | Mr. Bayu |
+| | 09:30 - 11:00 | Class Executive | Ms. Eka |
+
+---
+
+## 2. Jadwal Program D1 (Royal & Celebrity)
+Jadwal ini khusus untuk **Program D1** dengan pembagian kelompok **Royal** dan **Celebrity**.
+
+| Hari | Waktu | Kelompok Royal | Kelompok Celebrity |
+| :--- | :--- | :--- | :--- |
+| **Senin** | 08:30 - 10:00 | Mr. Richard | Mr. Masril |
+| | 10:15 - 11:45 | Ms. Helmi | Mr. Richard |
+| | 12:15 - 13:45 | Mr. Masril | Ms. Helmi |
+| **Selasa** | 08:30 - 10:00 | Mr. Ega | Mr. Richard |
+| | 10:15 - 11:45 | Ms. Helmi | Mr. Ega |
+| | 12:15 - 13:45 | Mr. Richard | Ms. Helmi |
+| **Rabu** | 08:30 - 10:00 | Mr. Ega | Mr. Richard |
+| | 10:15 - 11:45 | Ms. Helmi | Mr. Ega |
+| | 12:15 - 13:45 | Mr. Richard | Ms. Helmi |
+| **Kamis** | 08:30 - 10:00 | Ms. Eka | Mr. Tri |
+| | 10:15 - 11:45 | Mr. Masril | Ms. Eka |
+| | 12:15 - 13:45 | Mr. Tri | Mr. Masril |
+| **Jumat** | 08:00 - 09:00 | Ms. Eka | Mr. Ega |
+| | 09:00 - 10:00 | Mr. Tri | Ms. Eka |
+| | 10:00 - 11:00 | Mr. Ega | Mr. Tri |
+
+---
+
+## Rekomendasi Struktur Database
+Saat ini, tabel `schedules` memiliki kolom `room` tetapi belum memiliki kolom `class_group` (untuk membedakan Royal/Celebrity atau A/B). 
+
+**Saran Perubahan:**
+1. Tambahkan kolom `class_group` ke tabel `schedules`.
+2. Update form input jadwal agar Admin bisa memilih Kelompok (Royal/Celebrity/A/B).

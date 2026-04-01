@@ -1,0 +1,40 @@
+{
+	"appId": "com.sailingmalang.siakad",
+	"appName": "SIAKAD Sailing Malang",
+	"webDir": "www",
+	"server": {
+		"url": "https://siakad.sailing-malang.com",
+		"cleartext": true,
+		"allowNavigation": [
+			"siakad.sailing-malang.com"
+		]
+	},
+	"plugins": {
+		"SplashScreen": {
+			"launchShowDuration": 3000,
+			"launchAutoHide": true,
+			"backgroundColor": "#ffffff",
+			"androidSplashResourceName": "splash",
+			"androidScaleType": "CENTER_CROP",
+			"showSpinner": false,
+			"androidSpinnerStyle": "large",
+			"iosSpinnerStyle": "small",
+			"spinnerColor": "#999999",
+			"splashFullScreen": true,
+			"splashImmersive": true,
+			"layoutName": "launch_screen",
+			"useDialog": false
+		},
+		"Camera": {
+			"permissions": [
+				"camera",
+				"photos"
+			]
+		},
+		"Geolocation": {
+			"permissions": [
+				"location"
+			]
+		}
+	}
+}

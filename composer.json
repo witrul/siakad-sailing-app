@@ -1,0 +1,27 @@
+{
+    "name": "siakad/sailing",
+    "description": "SIAKAD Sailing Hotel & Cruise Line",
+    "type": "project",
+    "require": {
+        "php": "^8.2",
+        "phpoffice/phpspreadsheet": "^1.29",
+        "dompdf/dompdf": "^2.0",
+        "endroid/qr-code": "^4.8"
+    },
+    "authors": [
+        {
+            "name": "WTRL_Coding",
+            "email": "witrul15@gmail.com"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        },
+        "platform": {
+            "php": "8.2.0"
+        },
+        "platform-check": false
+    }
+}
